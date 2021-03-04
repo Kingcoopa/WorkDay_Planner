@@ -27,3 +27,9 @@ var hr = parseInt(hour.attr('id'));
         $(this).addClass('future');
     }
 });
+
+// Array that references the hour blocks for inputted tasks when the paged is refreshed.
+var hrBlock = ['09', '10', '11', '12', '13', '14', '15', '16', '17'];
+
+// Stores inputted tasks and makes array accessible to local storage. 
+var taskInput = JSON.parse(localStorage.getItem('taskInput')) || {};
