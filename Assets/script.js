@@ -45,3 +45,13 @@ $('.btnSave').on('click', function () {
     // Keep task input on the page, saved to local storage.
     localStorage.setItem('taskInput', JSON.stringify(taskInput));
 })
+
+// Populates tasks that have been inputted when the page is reloaded.
+for (i = 0; i < hrBlock.length; i++) {
+    
+    if (taskInput[hrBlock[i]] != null) {
+      enterTask[i].value = taskInput[hrBlock[i]];
+    } else {
+      enterTask[i].value = "";
+    }
+}
