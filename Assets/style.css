@@ -6,11 +6,82 @@ body {
     background-color: #eba4a450;
   }
   
-  h1 {
+h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
-  p {
+p {
     font-family:fantasy;
   }
+
+textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 11px;
+  }
   
+.jumbotron {
+    text-align: center;
+    background: rgba(163, 223, 51, 0.342);
+    color: black;
+    border-radius: 0;
+    border-bottom: 5px solid rgb(12, 12, 14);
+  }
+  
+.row {
+    white-space: pre-wrap;
+    height: 81px;
+    border-top: 2px solid white;;
+  }
+  
+.hr {
+    background-color: #eba4a400;
+    color: #000000;
+    border-top: 2px solid #000000;
+    padding-top: 25px;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+.enterTask {
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+/* Expired time blocks turn Grey */
+.expired {
+    background-color: #aaaaaa;
+    color: black;
+    opacity: 34%;
+    font-style: italic;
+  }
+  
+/* Current time blocks turn Yellow */
+.current {
+    background-color: #dbc14e;
+    color: black;
+  }
+
+/* Future time blocks turn Green */
+.future {
+    background-color: #17af75;
+    color: black;
+  }
+  
+/* Save Button styling */
+.btnSave {
+    border-left: 1px solid black;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #063dd5;
+    color: white;
+  }
+  
+.btnSave:hover {
+    font-size: 17px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+  }
