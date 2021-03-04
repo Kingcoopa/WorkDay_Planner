@@ -33,3 +33,15 @@ var hrBlock = ['09', '10', '11', '12', '13', '14', '15', '16', '17'];
 
 // Stores inputted tasks and makes array accessible to local storage. 
 var taskInput = JSON.parse(localStorage.getItem('taskInput')) || {};
+
+// Makes Save Button live.
+$('.btnSave').on('click', function () {
+    var tasks = $(this).prev().val();
+    var taskID = $(this).prev().attr('id');
+  
+    // Fixes tasks to task input and  taskID.
+    taskInput[taskID] = tasks;
+  
+    // Keep task input on the page, saved to local storage.
+    localStorage.setItem('taskInput', JSON.stringify(taskInput));
+})
