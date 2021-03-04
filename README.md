@@ -8,6 +8,8 @@ In a world full of razzle and dazzle; there has to be a simple solution for the 
 
 ## The App in Action
 
+![SchedularApp (1)](https://user-images.githubusercontent.com/69878838/110035332-84bba600-7d09-11eb-8654-5ec8df4c66c5.png)
+
 
 ## Technologies Utilized for this App
 
